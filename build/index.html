@@ -42,7 +42,7 @@
     <main class="max-w-4xl mx-auto">
       <section
         id="hero"
-        class="flex flex-col-reverse items-center justify-center gap-8 p-6 mb-12 md:flex-row scroll-mt-20"
+        class="flex flex-col-reverse items-center justify-center gap-8 p-6 mb-12 md:flex-row scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
       >
         <article class="px-6 md:w-3/4 sm:w-9/12 lg:w-full">
           <h2 class="max-w-md text-4xl font-bold leading-tight md:text-5xl">
@@ -198,6 +198,28 @@
       </section>
       <!-- End of Contact Section -->
     </main>
+    <footer id="footer" class="text-white bg-gradient-to-r from-[#092233] to-[#1b4d50]">
+      <section
+        class="flex flex-col items-center max-w-4xl p-4 mx-auto text-xl sm:flex-row sm:justify-between"
+      >
+        <address>
+          <h3 class="text-2xl font-bold">Acme Company</h3>
+          <p>1234 Rocket Road</p>
+          <p>Space, Mars 00000</p>
+          <p>Phone: 1-800-ROCKETS</p>
+        </address>
+        <nav class="items-center justify-center hidden mt-4 space-x-8 md:flex sm:mt-0">
+          <a href="#hero" class="hover:opacity-80">Home</a>
+          <a href="#rocket" class="hover:opacity-80">Rockets</a>
+          <a href="#testimonials" class="hover:opacity-80">Testimonials</a>
+          <a href="#contact" class="hover:opacity-80">Contact Us</a>
+        </nav>
+        <div class="p-4"></div>
+        <div class="flex flex-col lg:gap-2">
+          <p class="text-sm text-right sm:text-lg">© 2021 Acme Company</p>
+        </div>
+      </section>
+    </footer>
     <script src="js/dark.js"></script>
   </body>
 </html>

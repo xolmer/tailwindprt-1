@@ -23,3 +23,13 @@
   z-index: -1;
   box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
 }
+
+@layer utilities {
+  .glow-shadow {
+    @apply shadow-2xl;
+  }
+
+  .section-min-height {
+    min-height: calc(100vh - 4rem);
+  }
+}
