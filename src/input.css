@@ -5,11 +5,11 @@
 /* Custom CSS */
 
 /* radial gradiant */
-.bg-radial {
+/* .bg-radial {
   background: radial-gradient(lightyellow, lightblue);
-}
+} */
 
-.glow-shadow {
+/* .glow-shadow {
   position: relative;
 }
 
@@ -22,14 +22,18 @@
   bottom: -10px;
   z-index: -1;
   box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
-}
+} */
 
 @layer utilities {
-  .glow-shadow {
-    @apply shadow-2xl;
-  }
-
   .section-min-height {
     min-height: calc(100vh - 4rem);
+  }
+
+  /* .toggle-btn {
+    @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent;
+  } */
+
+  .toggle-btn {
+    @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg];
   }
 }
